@@ -1,0 +1,106 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+// Body Styles 
+body,
+html, 
+.body {
+  background: #f3f3f3 !important;
+}
+
+.container.header {
+  background: #f3f3f3;
+}
+
+.body-drip {
+  border-top: 8px solid #663399;
+}
+
+// Full Width Headers
+.header {
+  background: white;
+  padding: 16px 0
+}
+
+.header .columns {
+  padding-bottom: 0;
+}
+
+.header p {
+  color: #fff;
+  padding-top: 15px;
+}
+
+.header .container {
+  background: transparent;
+}
+
+.wrapper.secondary {
+  background: #f3f3f3;
+}
+
+.brand {
+  display: block;
+  height: 26px;
+  margin: 0 8px;
+  width: 130px;
+}
+
+.menu-item a {
+  font-size: 14px;
+  padding: 8px 0;
+  font-weight: 700;
+  line-height: 44px;
+  white-space: nowrap;
+}
+
+table.menu.secondary-menu {
+  max-width: 400px;
+  text-align: center;
+  margin: auto;
+  @media only screen and (max-width: 596px) {
+    max-width: none !important;
+  }
+  tr, td {
+    text-align: center;
+  }
+}
+
+table.menu th.secondary-menu-item {
+  border-left: 1px solid #e0e0e4;
+  float: none;
+  margin: 0 auto;
+  font-size: 14px;
+  padding: 0 8px;
+  a {
+    color: $medium-gray;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  &:first-child {
+    border-left: none
+  }
+}
+
+.vs-footer-info {
+  color: $secondary-color;
+  font-size: 14px;
+  padding: 16px 0 40px 0;
+  text-align: center;
+}
+
+.callout-inner p:not(.lead), li {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.fine-print {
+  font-size: 85%;
+  text-align: center;
+  color: $secondary-color
+}

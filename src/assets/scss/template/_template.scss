@@ -1,5 +1,4 @@
-// These are the styles to make some of the templates look extra nice.
-// Feel free to remove these styles for production!
+
 
 // Body Styles 
 body,
@@ -9,34 +8,48 @@ html,
 }
 
 .container.header {
-  background: #f3f3f3;
+  background: $light-gray;
 }
 
 .body-drip {
   border-top: 8px solid #663399;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 // Full Width Headers
+
+.not-ticket-header {
+  padding: 0 32px;
+  p {
+    padding: 20px 0;
+    color: $primary-color;
+    font-weight: 700;
+    margin-bottom: 0;
+  }
+}
+
 .header {
-  background: white;
-  padding: 16px 0
-}
-
-.header .columns {
-  padding-bottom: 0;
-}
-
-.header p {
-  color: #fff;
-  padding-top: 15px;
-}
-
-.header .container {
-  background: transparent;
+  background: $dark-blue;
+  .columns {
+    padding-bottom: 0;
+  }
+  p {
+    color: #fff;
+    padding-top: 15px;
+  }
+  .wrapper-inner {
+    padding: 16px; /*controls the height of the header*/
+  }
+  .container {
+    background: transparent;
+  }
 }
 
 .wrapper.secondary {
-  background: #f3f3f3;
+  background: $light-gray;
 }
 
 .brand {
@@ -48,50 +61,37 @@ html,
 
 .menu-item a {
   font-size: 14px;
-  padding: 8px 0;
-  font-weight: 700;
+  padding: 4px 10px;
+  font-weight: 500;
   line-height: 44px;
   white-space: nowrap;
-}
-
-table.menu.secondary-menu {
-  max-width: 400px;
   text-align: center;
-  margin: auto;
-  @media only screen and (max-width: 596px) {
-    max-width: none !important;
-  }
-  tr, td {
-    text-align: center;
-  }
+  color: white !important;
+  text-transform: none;
 }
 
 table.menu th.secondary-menu-item {
-  border-left: 1px solid #e0e0e4;
   float: none;
   margin: 0 auto;
   font-size: 14px;
   padding: 0 8px;
   a {
-    color: $medium-gray;
-    font-size: 14px;
+    color: $dark-blue !important;
+    font-size: 11px;
     font-weight: 400;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     white-space: nowrap;
-  }
-  &:first-child {
-    border-left: none
   }
 }
 
 .vs-footer-info {
   color: $secondary-color;
-  font-size: 14px;
+  font-size: 11px;
   padding: 16px 0 40px 0;
-  text-align: center;
+  text-align: left;
 }
 
 .callout-inner p:not(.lead), li {
@@ -103,4 +103,59 @@ table.menu th.secondary-menu-item {
   font-size: 85%;
   text-align: center;
   color: $secondary-color
+}
+
+.warning {
+  padding: 20px;
+  color: #CE3197
+}
+
+.order-stepper {
+  margin-bottom: 24px;
+}
+
+.order-item {
+  line-height: 50px;
+  height: 50px;
+}
+
+.order {
+  display: inline-block
+}
+
+.order-item-text, .align-middle {
+  vertical-align: middle;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.callout-inner.secondary {
+  background: $light-gray !important;
+}
+
+.button.secondary {
+  td {
+    background: none !important;
+  }
+  a {
+    border: 1px solid $dark-blue !important;
+    color: $dark-blue !important;
+    border-radius: 8px !important;
+  }
+}
+
+.footer-menu {
+  vertical-align: middle;
+  th {
+    padding: 0;
+  }
+  .menu-item a {
+    color: $dark-blue !important;
+  }
 }

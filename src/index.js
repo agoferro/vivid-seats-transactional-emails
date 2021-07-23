@@ -139,6 +139,8 @@ function inliner(css) {
     .pipe(
       $.htmlmin,
       {
+        collapseWhitespace: false,
+        collapseInlineTagWhitespace: false,
         minifyCSS: {
           level: {
             1: {
@@ -146,6 +148,7 @@ function inliner(css) {
             }
           }
         },
+        removeTagWhitespace: false,
         html5: false
       }
     );

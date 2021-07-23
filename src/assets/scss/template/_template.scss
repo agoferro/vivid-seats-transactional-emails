@@ -8,7 +8,7 @@ html,
 }
 
 .email-body {
-  padding: 16px
+  padding: 16px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -26,7 +26,7 @@ html,
 
 .container.header {
   background: $dark-blue;
-  padding: 18px 32px
+  padding: 18px 32px;
 }
 
 .body-drip {
@@ -112,10 +112,12 @@ center {
   text-transform: none;
 }
 
-table.header-nav, table.footer-nav {
+table.header-nav,
+table.footer-nav {
   margin: 0;
-  th.menu-item, td.menu-item {
-    width: auto!important;
+  th.menu-item,
+  td.menu-item {
+    width: auto !important;
     a {
       margin: 0;
       padding: 0;
@@ -128,7 +130,8 @@ table.header-nav, table.footer-nav {
 
 table.social-menu {
   margin: 0;
-  th.menu-item, td.menu-item {
+  th.menu-item,
+  td.menu-item {
     padding: 0;
     a {
       text-align: left;
@@ -142,10 +145,11 @@ table.social-menu {
 table.secondary-menu {
   padding: 16px;
   margin-bottom: 0;
-  th.secondary-menu-item, td.secondary-menu-item {
+  th.secondary-menu-item,
+  td.secondary-menu-item {
     float: none;
-    width: auto!important;
-    display: inline-block!important;
+    width: auto !important;
+    display: inline-block !important;
     margin: 0;
     font-size: 14px;
     padding: 0;
@@ -168,7 +172,8 @@ table.secondary-menu {
   text-align: left;
 }
 
-.callout-inner p:not(.lead), li {
+.callout-inner p:not(.lead),
+li {
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 24px;
@@ -177,12 +182,12 @@ table.secondary-menu {
 .fine-print p {
   font-size: 12px;
   text-align: center;
-  color: #666
+  color: #666;
 }
 
 .warning {
   padding: 20px;
-  color: #CE3197
+  color: #ce3197;
 }
 
 .order-stepper {
@@ -195,10 +200,11 @@ table.secondary-menu {
 }
 
 .order {
-  display: inline-block
+  display: inline-block;
 }
 
-.order-item-text, .align-middle {
+.order-item-text,
+.align-middle {
   vertical-align: middle;
 }
 
@@ -211,7 +217,7 @@ table.secondary-menu {
 }
 
 .callout-inner.secondary {
-  background: white !important;
+  background: #d3d3dc !important;
 }
 
 .button.secondary {
@@ -228,15 +234,15 @@ table.secondary-menu {
   }
 }
 
-
 .footer-menu {
   vertical-align: middle;
-  background: #EFEFF6;
-  padding: 16px
+  background: #efeff6;
+  padding: 16px;
 }
 
 table.footer-nav {
-  th.menu-item, td.menu-item {
+  th.menu-item,
+  td.menu-item {
     padding: 0 5px;
     a {
       color: $dark-blue !important;
@@ -245,12 +251,29 @@ table.footer-nav {
   }
 }
 
-th, td [valign="middle"] {
+th,
+td [valign="middle"] {
   vertical-align: middle;
 }
 
-@media screen and (min-width: $global-breakpoint) {
-  .need-additional-help {
-    padding: 0 40px
+.need-additional-help {
+  @media screen and (min-width: $global-breakpoint) {
+    padding: 0 40px;
+  }
+}
+
+.order-button {
+  display: inline-block;
+  @media screen and (max-width: $global-breakpoint) {
+    display: block !important;
+  }
+}
+
+.order-link {
+  line-height: 38px;
+  margin-left: 10px;
+  @media screen and (max-width: $global-breakpoint) {
+    margin-left: 0;
+    margin-top: 10px;
   }
 }

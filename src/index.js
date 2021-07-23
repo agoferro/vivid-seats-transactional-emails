@@ -139,17 +139,13 @@ function inliner(css) {
     .pipe(
       $.htmlmin,
       {
-        collapseWhitespace: false,
-        collapseInlineTagWhitespace: false,
         minifyCSS: {
           level: {
             1: {
               roundingPrecision: 'px=2'
             }
           }
-        },
-        removeTagWhitespace: false,
-        html5: false
+        }
       }
     );
 

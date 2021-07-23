@@ -1,14 +1,32 @@
-
-
-// Body Styles 
+// Body Styles
 body,
-html, 
+html,
 .body {
-  background: #f3f3f3 !important;
+  background: $white !important;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+.email-body {
+  padding: 16px
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark-img {
+    display: inline-block !important;
+    width: auto !important;
+    overflow: visible !important;
+    float: none !important;
+    max-height: inherit !important;
+    max-width: inherit !important;
+    margin-top: 0px !important;
+    visibility: inherit !important;
+  }
 }
 
 .container.header {
-  background: $light-gray;
+  background: $dark-blue;
+  padding: 18px 32px
 }
 
 .body-drip {
@@ -17,6 +35,19 @@ html,
 
 .bold {
   font-weight: 700;
+}
+
+table.container {
+  max-width: 100%;
+  @media screen and (max-width: $global-breakpoint) {
+    width: 100%;
+  }
+}
+
+center {
+  @media screen and (max-width: $global-breakpoint) {
+    min-width: auto;
+  }
 }
 
 // Full Width Headers
@@ -33,6 +64,8 @@ html,
 
 .header {
   background: $dark-blue;
+  padding: 0 16px;
+
   .columns {
     padding-bottom: 0;
   }
@@ -53,10 +86,19 @@ html,
 }
 
 .brand {
-  display: block;
-  height: 26px;
-  margin: 0 8px;
-  width: 130px;
+  img {
+    display: block;
+    height: 26px;
+    margin: 0 8px;
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: $global-breakpoint) {
+  .brand-column {
+    margin-top: 16px !important;
+    margin-right: auto;
+  }
 }
 
 .menu-item a {
@@ -70,39 +112,72 @@ html,
   text-transform: none;
 }
 
-table.menu th.secondary-menu-item {
-  float: none;
-  margin: 0 auto;
-  font-size: 14px;
-  padding: 0 8px;
-  a {
-    color: $dark-blue !important;
-    font-size: 11px;
-    font-weight: 400;
-    margin: 0;
+table.header-nav, table.footer-nav {
+  margin: 0;
+  th.menu-item, td.menu-item {
+    width: auto!important;
+    a {
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+  }
+}
+
+table.social-menu {
+  margin: 0;
+  th.menu-item, td.menu-item {
     padding: 0;
-    text-align: left;
-    text-decoration: none;
-    white-space: nowrap;
+    a {
+      text-align: left;
+      text-decoration: none;
+      white-space: nowrap;
+      line-height: 18px;
+    }
+  }
+}
+
+table.secondary-menu {
+  padding: 16px;
+  margin-bottom: 0;
+  th.secondary-menu-item, td.secondary-menu-item {
+    float: none;
+    width: auto!important;
+    display: inline-block!important;
+    margin: 0;
+    font-size: 14px;
+    padding: 0;
+    a {
+      color: $dark-blue !important;
+      font-size: 11px;
+      font-weight: 400;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      text-decoration: none;
+      white-space: nowrap;
+    }
   }
 }
 
 .vs-footer-info {
   color: $secondary-color;
   font-size: 11px;
-  padding: 16px 0 40px 0;
   text-align: left;
 }
 
 .callout-inner p:not(.lead), li {
   font-size: 14px;
-  line-height: 26px;
+  line-height: 18px;
+  margin-bottom: 24px;
 }
 
-.fine-print {
-  font-size: 85%;
+.fine-print p {
+  font-size: 12px;
   text-align: center;
-  color: $secondary-color
+  color: #666
 }
 
 .warning {
@@ -136,7 +211,7 @@ table.menu th.secondary-menu-item {
 }
 
 .callout-inner.secondary {
-  background: $light-gray !important;
+  background: white !important;
 }
 
 .button.secondary {
@@ -148,14 +223,34 @@ table.menu th.secondary-menu-item {
     color: $dark-blue !important;
     border-radius: 8px !important;
   }
+  &.text-right {
+    margin-left: auto !important;
+  }
 }
+
 
 .footer-menu {
   vertical-align: middle;
-  th {
-    padding: 0;
+  background: #EFEFF6;
+  padding: 16px
+}
+
+table.footer-nav {
+  th.menu-item, td.menu-item {
+    padding: 0 5px;
+    a {
+      color: $dark-blue !important;
+      line-height: 14px;
+    }
   }
-  .menu-item a {
-    color: $dark-blue !important;
+}
+
+th, td [valign="middle"] {
+  vertical-align: middle;
+}
+
+@media screen and (min-width: $global-breakpoint) {
+  .need-additional-help {
+    padding: 0 40px
   }
 }

@@ -1,0 +1,90 @@
+---
+subject: Your tickets are ready
+---
+
+
+<h4>%firstName%, your tickets are ready.</h4>
+
+<!-- Visualization of Steps -->
+
+<table class="order-stepper">
+    <tr class="order-item">
+        <td width="60">
+            <img class="order placed float-center" alt="Order Placed"
+                 src="https://a.vsstatic.com/email/template/transactional/icons/stepper/order-placed.png"
+                 width="50" height="50">
+        </td>
+        <td class="order-item-text">
+            <span>Order Placed</span>
+        </td>
+    </tr>
+    <tr class="line__inactive">
+        <td valign="middle" width="60">
+            <img alt="line"
+                 src="https://a.vsstatic.com/email/template/transactional/icons/stepper/line_inactive.png">
+        </td>
+        <td></td>
+    </tr>
+    <tr class="order-item" valign="middle">
+        <td valign="middle" width="60">
+            <img class="order placed float-center" alt="Order Placed"
+                 src="https://a.vsstatic.com/email/template/transactional/icons/stepper/order-confirmed_inactive.png"
+                 width="50" height="50">
+        </td>
+        <td class="order-item-text">
+            <span>Order Confirmed</span>
+        </td>
+    </tr>
+    <tr class="line__active">
+        <td valign="middle" width="60">
+            <img alt="line"
+                 src="https://a.vsstatic.com/email/template/transactional/icons/stepper/line_active.png">
+        </td>
+    </tr>
+    <tr class="order-item">
+        <td valign="middle" width="60">
+            <img class="order placed float-center" alt="Order Placed"
+                 src="https://a.vsstatic.com/email/template/transactional/icons/stepper/order-download_active.png"
+                 width="50" height="50">
+        </td>
+        <td class="order-item-text">
+            <span><strong>Order Ready</strong></span>
+        </td>
+    </tr>
+</table>
+<!-- /Visualization of Steps -->
+
+<!-- Instructions -->
+
+<p><strong>Access your tickets:</strong></p>
+
+<p>Because of Wrigley Field’s ticketing policy, your tickets must be delivered outside of Vivid Seats. Most tickets are issued through the MLB Ballpark app.</p>
+
+<callout>
+    NOTE: If you received a transfer email directly from Ticketmaster, please follow those instructions to access your tickets. You may disregard the steps below.
+</callout>
+
+<p>If you did not receive an email from Ticketmaster, follow the step-by-step instructions below to get your
+    tickets. It’s quick and easy.</p>
+
+<ol>
+    <li><strong>Download the MLB Ballpark App and Log In.</strong><br>
+        The app will prompt you to log in (create an account if you do not already have one). Log in with the same email (%customerEmail%) you used to buy your tickets.
+        <strong>Download Links: <a
+                href="https://itunes.apple.com/us/app/mlb.com-at-the-ballpark/id513135722?mt=8&amp;ign-mpt=uo%3D4">Apple
+            App Store</a> | <a
+                href="https://play.google.com/store/apps/details?id=com.bamnetworks.mobile.android.ballpark">Google
+            Play App Store</a></strong>
+    </li>
+    <li><strong>Navigate to “Wallet” in MLB Ballpark App to View Tickets</strong><br>
+        They should be
+        properly displayed in the app.
+    </li>
+</ol>
+
+<p>Now that wasn’t too hard, was it? Have fun and we’ll see you there!</p>
+<!-- Instructions -->
+
+{{> order}}
+
+{{> faq}}

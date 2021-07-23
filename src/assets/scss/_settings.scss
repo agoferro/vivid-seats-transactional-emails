@@ -21,15 +21,15 @@ $secondary-color: #04092C;
 $success-color: #3adb76;
 $warning-color: #ffae00;
 $alert-color: #ec5840;
-$light-gray: #f3f3f3;
+$light-gray: #EFEFF6;
 $medium-gray: #666;
 $dark-gray: #32313d;
 $black: #0a0a0a;
 $white: #fefefe;
 $pre-color: #ff6908;
 
-$lighter-blue: #d3d3dc;
-$dark-blue: #04092C;
+$lighter-blue: #EFEFF6;
+$dark-blue: $secondary-color;
 
 
 $global-width: 650px;
@@ -47,7 +47,7 @@ $global-breakpoint: $global-width + $global-gutter;
 // -------
 
 $grid-column-count: 12;
-$column-padding-bottom: $global-padding;
+$column-padding-bottom: 8px;
 $container-radius: 0;
 
 // 3. Block Grid
@@ -94,7 +94,7 @@ $body-font-family: 'GT-Walsheim', Arial, Helvetica, sans-serif;
 $global-font-weight: normal;
 $header-color: inherit;
 $global-line-height: 1.4;
-$global-font-size: 15px;
+$global-font-size: 18px;
 $body-line-height: $global-line-height;
 $header-font-family: $body-font-family;
 $header-font-weight: $global-font-weight;

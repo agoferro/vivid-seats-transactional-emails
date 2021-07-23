@@ -122,8 +122,7 @@ function inliner(css) {
     .pipe($.inlineCss, {
       applyStyleTags: false,
       removeStyleTags: true,
-      preserveMediaQueries: true,
-      removeLinkTags: false
+      preserveMediaQueries: true
     })
     .pipe($.replace, '<!-- <style> -->', `<style>${mqCss}</style>`)
     .pipe($.replace, '<link rel="stylesheet" type="text/css" href="css/app.css">', '')
